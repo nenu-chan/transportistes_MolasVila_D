@@ -1,0 +1,59 @@
+
+body {
+	background: #eee;
+	padding: 11px;	
+	font-style:
+}
+
+#capçalera{
+	height:150px;
+	width: 911px;		
+}
+
+#logo{
+	height: 150px;
+	width: 200px;
+	background: #FFE4C4;
+	float: left;
+	margin-right:11px;
+}
+
+#login{
+	float: right;
+	background: #FFE4C4;
+	width: 700px;
+	height: 150px;
+}
+
+#cos{
+	clear:both;
+	background: #FFE4C4;
+	margin-top: 11px;
+}
+
+#menu{
+	background: #FFE4C4;
+	width: 200px;
+	height: 300px;
+	margin-right:11px;
+	float: left;
+}
+#menu button{
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+
+}
+
+button{
+	background-color:#FFE4C4;
+	color: #DC143C;
+	font-weight: bold;
+}
+
+#info{
+	background: #FFE4C4;
+	height: 300px;
+	float: left;
+	width: 700px;
+}

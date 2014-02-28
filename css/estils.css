@@ -1,0 +1,261 @@
+
+		body { 
+			background: #eee; 
+		}
+
+		/*------------------------------*/
+
+		form {
+			/*width: 550px;*/
+			/*height: 330px;*/
+			/*margin: 100px auto 50px auto;*/
+			padding: 20px;
+			position: relative;
+			background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAMAAAB883U1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF7+/v7u7u////REBVnAAAAAN0Uk5T//8A18oNQQAAABZJREFUeNpiYGJiYmBiYgRiBhAGCDAAALsAFJhiJ+UAAAAASUVORK5CYII=);
+			border: 1px solid #ccc;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px; 
+			border-radius: 3px;  
+		}
+
+		form::before, 
+		form::after {
+			content: "";
+			position: absolute;
+			bottom: -3px;
+			left: 2px;
+			right: 2px;
+			top: 0;
+			z-index: -1;
+			background: #fff;
+			border: 1px solid #ccc;			
+		}
+
+		form::after {
+			left: 4px;
+			right: 4px;
+			bottom: -5px;
+			z-index: -2;
+			-moz-box-shadow: 0 8px 8px -5px rgba(0,0,0,.3);
+			-webkit-box-shadow: 0 8px 8px -5px rgba(0,0,0,.3);
+			box-shadow: 0 8px 8px -5px rgba(0,0,0,.3);
+		}
+
+		/*------------------------------*/
+
+		form h1 {
+			position: relative;
+			font: italic 1em/3.5em 'trebuchet MS',Arial, Helvetica;
+			color: #999;
+			text-align: center;
+			margin: 0 0 20px;
+		}
+
+		form h1::before,
+		form h1::after{
+			content:'';
+			position: absolute;
+			border: 1px solid rgba(0,0,0,.15);
+			top: 10px;
+			bottom: 10px;
+			left: 0;
+			right: 0;
+		}
+
+		form h1::after{
+			top: 0;
+			bottom: 0;
+			left: 10px;
+			right: 10px;
+		}
+
+		/*------------------------------*/
+
+        ::-webkit-input-placeholder {
+           color: #bbb;
+        }
+        
+        :-moz-placeholder {
+           color: #bbb;
+        } 				    	
+
+		.placeholder{
+			color: #bbb; /* polyfill */
+		}		
+
+		form input{
+			margin: 5px 0;
+			padding: 15px;
+			width: 100%;
+			*width: 518px;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			border: 1px solid #ccc;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;	
+		}
+
+		form input:focus{
+			outline: 0;
+			border-color: #aaa;
+			-moz-box-shadow: 0 2px 1px rgba(0, 0, 0, .3) inset;
+			-webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, .3) inset;
+			box-shadow: 0 2px 1px rgba(0, 0, 0, .3) inset;
+		}		
+
+		form button{
+			margin: 20px 0 0 0;
+			padding: 15px 8px;			
+			width: 100%;
+			cursor: pointer;
+			border: 1px solid #2493FF;
+			overflow: visible;
+			display: inline-block;
+			color: #fff;
+			font: bold 1.4em arial, helvetica;
+			text-shadow: 0 -1px 0 rgba(0,0,0,.4);		  
+			background-color: #2493ff;
+			background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.5)), to(rgba(255,255,255,0)));
+			background-image: -webkit-linear-gradient(top, rgba(255,255,255,.5), rgba(255,255,255,0));
+			background-image: -moz-linear-gradient(top, rgba(255,255,255,.5), rgba(255,255,255,0));
+			background-image: -ms-linear-gradient(top, rgba(255,255,255,.5), rgba(255,255,255,0));
+			background-image: -o-linear-gradient(top, rgba(255,255,255,.5), rgba(255,255,255,0));
+			background-image: linear-gradient(top, rgba(255,255,255,.5), rgba(255,255,255,0));
+			-webkit-transition: background-color .2s ease-out;
+			-moz-transition: background-color .2s ease-out;
+			-ms-transition: background-color .2s ease-out; 
+			-o-transition: background-color .2s ease-out;  
+			transition: background-color .2s ease-out;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+			-moz-box-shadow:  0 2px 1px rgba(0, 0, 0, .3),
+							  0 1px 0 rgba(255, 255, 255, .5) inset;
+			-webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, .3),
+								0 1px 0 rgba(255, 255, 255, .5) inset;
+			box-shadow: 0 2px 1px rgba(0, 0, 0, .3),
+						0 1px 0 rgba(255, 255, 255, .5) inset;			  						  
+		}
+
+		form button:hover{
+		  	background-color: #7cbfff;
+            border-color: #7cbfff;
+		}
+
+		form button:active{
+			position: relative;
+			top: 3px;
+			text-shadow: none;
+			-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .3) inset;
+			-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .3) inset;
+			box-shadow: 0 1px 0 rgba(255, 255, 255, .3) inset;
+		}
+
+		/* ------------------------------------------------- */
+
+		#about{
+		    color: #999;
+		    text-align: center;
+		    font: 0.9em Arial, Helvetica;
+		}
+
+		#about a{
+		    color: #777;
+		}		
+
+		.content{
+			border-radius : 10px;
+			background-color: #2493ff;
+			padding: 10px;
+			color: #fff;
+			text-shadow: 0 -1px 0 rgba(0,0,0,.4);
+			font:bold 1.4em arial, helvetica;
+			background-image:-webkit-linear-gradient(bottom, rgba(255,255,255,.2), rgba(255,255,255,0));
+			box-shadow: 0 2px 1px rgba(0, 0, 0, .3),
+ 0 1px 0 rgba(255, 255, 255, .5) inset;
+ 			border: solid 5px black;
+		}
+
+		.black_text{
+			color: #0093ff;			
+			text-shadow: 1px 2px 2px rgba(50,50,50,1);
+			font:bold 1.4em arial, helvetica;	
+		}
+
+
+		.delete_button{
+			right: 0px;
+			margin-right: 10px;
+			margin-top: -10px;
+			position: absolute;
+			cursor: pointer;
+		}
+
+		#menu{
+			position:absolute;
+			top:200px;
+			left:58px;
+			margin-top: 50px;
+			margin-left:100px;
+			width:240px;
+			display:block;			
+		}
+
+		#menu button{
+			padding:2px;
+			display:block;
+			width: 200px;
+			position:relative;
+		}
+
+		#contenidor_general{
+			width: 500px;
+			margin-top:242px;
+			margin-left:400px;
+			position:absolute;
+			display:block;			
+		}
+
+		#capcalera{
+			background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAECAMAAAB883U1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAlQTFRF7+/v7u7u////REBVnAAAAAN0Uk5T//8A18oNQQAAABZJREFUeNpiYGJiYmBiYgRiBhAGCDAAALsAFJhiJ+UAAAAASUVORK5CYII=);
+			border: 1px solid #ccc;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px; 
+			border-radius: 3px;
+			margin-left:150px;
+			top:0px;
+			margin-top: 25px;
+			width: 1000px;
+			height: 200px;
+			position:absolute;
+			display:block;
+		}
+
+		#login_register{
+			left:75%;
+			width:25%;
+			position:relative;
+			display:inline-block;			
+		}
+
+		#logo{
+			position:absolute;
+			display:inline-block;
+		}
+
+		#titol_empresa{
+			font-size: 60px;
+			font-family: helvetica, arial, sans-serif;
+			color:rgb(40,120,255);
+			left:200px;
+			position:absolute;
+		}
+
+		#titol_empresa p{
+			top:-30px;
+			vertical-align: center;
+			position:absolute;
+			font-style: bolder;
+			text-shadow: 1px 2px 2px rgba(50,50,50,1);
+		}
